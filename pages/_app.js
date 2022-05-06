@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <NextNProgress color="#fbbf24" options={{ showSpinner: false }} />
+      <NextNProgress color="#ef4444" options={{ showSpinner: false }} />
       <Component {...pageProps} />
     </>
   )
