@@ -18,7 +18,7 @@ export default function thankYou({ content, locale }) {
         <Layout seo={seo()} landing={true}>
             <Section>
                 <div className="space-y-5">
-                    <Title><span className='text-amber-500'>{content.title}</span></Title>
+                    <Title><span className='text-red-500'>{content.title}</span></Title>
                     <ReactMarkdown>{content.message}</ReactMarkdown>
                     <br />
                     <Link href={content.button.url}><a><Button>{content.button.text}</Button></a></Link>

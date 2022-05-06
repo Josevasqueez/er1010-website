@@ -43,7 +43,7 @@ export default function Lawyer({ navbar, footer, lawyer }) {
                         </div>
                         <div className="p-10 bg-slate-100">
                             <h3 className='font-bold text-2xl'>{lawyer.attributes.Name}</h3>
-                            <span className='text-amber-500'>{lawyer.attributes.Position}</span>
+                            <span className='text-red-500'>{lawyer.attributes.Position}</span>
                             <h5 className='text-slate-600 font-semibold mt-6'>LinkedIn</h5>
                             <a href={lawyer.attributes.LinkedIn} target="_blank" rel="noreferrer" className="underline">View Profile</a>
                             <h5 className='text-slate-600 font-semibold mt-4'>Education</h5>

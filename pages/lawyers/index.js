@@ -27,7 +27,7 @@ export default function index({ navbar, footer, content, lawyers, locale }) {
                                 <div className='bg-slate-100 p-7'>
                                     <h3 className='text-xl lg:text-2xl font-bold text-slate-900'>{lawyer.attributes.Name}</h3>
                                     <p className='text-sm md:text-base'>{lawyer.attributes.Position}</p>
-                                    <Link href={"/lawyers/" + lawyer.attributes.slug}><a className='text-amber-500 hover:text-amber-600 font-semibold text-sm'>{locale.includes('es') ? 'Ver más' : 'Read more'}</a></Link>
+                                    <Link href={"/lawyers/" + lawyer.attributes.slug}><a className='text-red-500 hover:text-red-600 font-semibold text-sm'>{locale.includes('es') ? 'Ver más' : 'Read more'}</a></Link>
                                 </div>
                             </div>
                         ))

@@ -35,8 +35,8 @@ export default function LandingForm({ data }) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <h3 className='text-2xl uppercase text-amber-500'>{title}</h3>
-            <a href={`tel:${phone}`} target="_blank" rel="noreferrer" className='text-2xl md:text-3xl font-bold text-amber-500 hover:text-amber-600 transition'>{phone}</a>
+            <h3 className='text-2xl uppercase text-red-500'>{title}</h3>
+            <a href={`tel:${phone}`} target="_blank" rel="noreferrer" className='text-2xl md:text-3xl font-bold text-red-500 hover:text-red-600 transition'>{phone}</a>
             <ReactMarkdown className='mb-8 mt-5'>{content}</ReactMarkdown>
             {
                 fields?.map((f, index) => (
@@ -44,8 +44,8 @@ export default function LandingForm({ data }) {
                 ))
             }
             <input type="text" name="botfield" id="botfield" placeholder='Don’t fill this out' className='hidden' onChange={handleInputChange} />
-            <input type="submit" value={isSubmit ? "..." : submit} disabled={isSubmit} className={`w-full rounded text-white ${isSubmit ? 'bg-slate-700 cursor-wait' : 'bg-amber-500 hover:bg-amber-600 cursor-pointer'} transition px-6 py-4 font-semibold text-sm `} />
-            <p className='mt-4 text-amber-500'>{last_content}</p>
+            <input type="submit" value={isSubmit ? "..." : submit} disabled={isSubmit} className={`w-full rounded text-white ${isSubmit ? 'bg-slate-700 cursor-wait' : 'bg-red-500 hover:bg-red-600 cursor-pointer'} transition px-6 py-4 font-semibold text-sm `} />
+            <p className='mt-4 text-red-500'>{last_content}</p>
         </form>
     )
 }
@@ -53,7 +53,7 @@ export default function LandingForm({ data }) {
 function Group({ label, type, id, placeholder = "", required = false, handleInputChange }) {
     return (
         <div className="mb-2">
-            <label className='text-xs'>{label}{required && <span className='text-amber-500 font-bold'>*</span>}</label>
+            <label className='text-xs'>{label}{required && <span className='text-red-500 font-bold'>*</span>}</label>
             {
                 type === "longtext"
                     ?
