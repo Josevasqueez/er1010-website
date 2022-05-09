@@ -11,7 +11,7 @@ export default function thankYou({ content, locale }) {
 
     const seo = () => {
         if(locale.includes('en')) return { metaTitle: "Thank you for contacting us", metaDescription: "You have contacted us, we are the Ezequiel Reyna Law Office, experienced personal injury attorneys" }
-        return { metaTitle: "Gracias por contactarnos", metaDescription: "Nos ha contactado, somos la oficina legal de Ezequiel Reyna, abogados con experiencia en lesiones personales." }
+        return { metaTitle: "Gracias por contactarnos", metaDescription: "Nos ha contactado, somos ER1010, abogados con experiencia en lesiones personales." }
     }
 
     return (

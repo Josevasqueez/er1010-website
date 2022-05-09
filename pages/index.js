@@ -34,7 +34,7 @@ export default function Home({ content, areas, navbar, footer, testimonials, res
         </div>
       </Section>
       <Section id="cobertura">
-        <div className="space-y-2 md:text-center" data-aos-duration="1000" data-aos="fade-in">
+        <div className="space-y-2 md:text-center">
           <Subtitle>{sections[0].title}</Subtitle>
           <Partnertitle>{sections[0].subtitle}</Partnertitle>
         </div>
