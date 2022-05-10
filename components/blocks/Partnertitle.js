@@ -4,6 +4,6 @@ export default function Partnertitle({ children, main = false }) {
 
     if (main) return <h3 className='font-semibold text-red-500 text-lg lg:text-xl'>{children}</h3>
     return (
-        <h4 className='text-base lg:text-xl text-gray-400'>{children}</h4>
+        <h4 className='text-base font-medium lg:text-lg text-red-500'>{children}</h4>
     )
 }

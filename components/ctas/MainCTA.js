@@ -5,10 +5,10 @@ import Subtitle from '../blocks/Subtitle'
 
 export default function MainCTA({ locale }) {
 
-    const title = locale.includes('es') ? "Oficina Legal de Ezequiel Reyna" : "Ezequiel Reyna Law Office";    
+    const title = locale.includes('es') ? "Abogados Especialistas en Accidentes Vehiculares" : "Ezequiel Reyna Law Office";    
     const cta = locale.includes('es') ? "Obten una cosulta gratis" : "Get a free consultation";    
     return (
-        <Section bg='bg-slate-900'>
+        <Section bg='bg-gray-900'>
             <div className="grid lg:grid-cols-5 content-center lg:gap-16 text-white">
                 <div className='col-start-2 col-span-3 space-y-5 text-center'>
                     <Subtitle><span className="text-white">{title}</span></Subtitle>
