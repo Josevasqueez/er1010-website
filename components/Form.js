@@ -23,7 +23,7 @@ export default function Form({ data }) {
             })
 
             if (response.status !== 200) throw new Error("Ocurrio un error")
-            router.push('/thank-you')
+            router.push('/gracias')
 
         } catch (err) {
             console.log(err);
@@ -34,7 +34,7 @@ export default function Form({ data }) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <h3 className='text-2xl font-semibold text-slate-900'>{title}</h3>
+            <h3 className='text-2xl font-semibold text-gray-900'>{title}</h3>
             <p className='text-sm mb-10'>{content}</p>
             {
                 fields?.map((f, index) => (
@@ -42,21 +42,21 @@ export default function Form({ data }) {
                 ))
             }
             <input type="text" name="botfield" id="botfield" placeholder='Don’t fill this out' className='hidden' onChange={handleInputChange} />
-            <input type="submit" value={isSubmit ? "..." : submit} disabled={isSubmit} className={`w-full rounded text-white ${isSubmit ? 'bg-slate-700 cursor-wait' : 'bg-red-500 hover:bg-red-600 cursor-pointer'} transition px-6 py-4 font-semibold text-sm `} />
+            <input type="submit" value={isSubmit ? "..." : submit} disabled={isSubmit} className={`w-full rounded text-white ${isSubmit ? 'bg-gray-700 cursor-wait' : 'bg-red-500 hover:bg-red-600 cursor-pointer'} transition px-6 py-4 font-semibold text-sm `} />
         </form>
     )
 }
 
 function Group({ label, type, id, placeholder = "", required = false, handleInputChange }) {
     return (
-        <div className="mb-5 text-slate-800">
+        <div className="mb-5 text-gray-800">
             <label className='text-xs'>{label}{required && <span className='text-red-500 font-bold'>*</span>}</label>
             {
                 type === "longtext"
                     ?
-                    <textarea onChange={handleInputChange} id={id} name={id} placeholder={placeholder} className='text-slate-800 border-b border-slate-200 w-full py-3 focus:outline-none focus:border-slate-400' />
+                    <textarea onChange={handleInputChange} id={id} name={id} placeholder={placeholder} className='text-gray-800 border-b border-gray-200 w-full py-3 focus:outline-none focus:border-gray-400' />
                     :
-                    <input onChange={handleInputChange} type={type} id={id} name={id} placeholder={placeholder} required={required} className='text-slate-800 border-b border-slate-200 w-full py-3 focus:outline-none focus:border-slate-400' />
+                    <input onChange={handleInputChange} type={type} id={id} name={id} placeholder={placeholder} required={required} className='text-gray-800 border-b border-gray-200 w-full py-3 focus:outline-none focus:border-gray-400' />
             }
         </div>
     )
