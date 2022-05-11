@@ -31,17 +31,17 @@ export default function Footer({ content }) {
                             <div className='flex space-x-4'>
                                 <PhoneIcon className='h-10' />
                                 <div>
-                                    <h5 className='text-xs text-gray-900 font-semibold'>Phone Number</h5>
+                                    <h5 className='text-xs text-gray-900 font-semibold'>Número de TLF</h5>
                                     <span className='text-sm'>{contact.phone}</span>
                                 </div>
                             </div>
-                            <div className='flex space-x-4'>
+                            {/* <div className='flex space-x-4'>
                                 <LocationMarkerIcon className='h-10' />
                                 <div>
                                     <h5 className='text-xs text-gray-900 font-semibold'>Ezequiel Reyna Law Office</h5>
                                     <span className='text-sm'>{contact.location}</span>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="flex md:col-span-2 space-x-2 items-center">
                                 {
                                     content.socials.data.map(i => {
