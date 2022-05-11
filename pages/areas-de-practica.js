@@ -23,7 +23,7 @@ export default function practiceAreas({ navbar, footer, content, areas }) {
                             <div key={area.id} className="rounded">
                                 <Image alt="" src={getImage(area.attributes.Cover.data.attributes.url)} height="50" width="100%" layout="responsive" objectFit='cover' />
                                 <div className='bg-gray-100 p-10'>
-                                    <h3 className='text-xl font-bold mb-5'>{area.attributes.Title}</h3>
+                                    <h3 className='text-xl font-medium text-red-500 mb-5'>{area.attributes.Title}</h3>
                                     <p className='mb-5'>{area.attributes.Description}</p>
                                 </div>
                             </div>
