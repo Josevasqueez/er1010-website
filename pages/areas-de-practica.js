@@ -7,7 +7,6 @@ import Section from '../components/blocks/Section';
 import Title from '../components/blocks/Title';
 
 export default function practiceAreas({ navbar, footer, content, areas }) {
-    console.log(content);
     return (
         <Layout seo={content.seo} navigation={navbar} footer={footer}>
             <Section>

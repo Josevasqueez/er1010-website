@@ -31,7 +31,7 @@ export default function Footer({ content }) {
                             <div className='flex space-x-4'>
                                 <PhoneIcon className='h-10' />
                                 <div>
-                                    <h5 className='text-xs text-gray-900 font-semibold'>Número de TLF</h5>
+                                    <h5 className='text-xs text-gray-900 font-semibold'>Número de Teléfono</h5>
                                     <span className='text-sm'>{contact.phone}</span>
                                 </div>
                             </div>

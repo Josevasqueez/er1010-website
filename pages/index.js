@@ -98,7 +98,6 @@ export default function Home({ content, areas, navbar, footer, testimonials, loc
           <div className='grid grid-cols-3 md:p-10'>
             {
               lawyers.map(law => {
-                console.log(law);
                 return (
                   <div key={law.id} className="aspect-w-1 aspect-h-1 overflow-hidden relative">
                     <Image alt="" src={getImage(law.attributes.Avatar.data.attributes.url)} layout="responsive" width="100" height="100" objectFit='cover' />

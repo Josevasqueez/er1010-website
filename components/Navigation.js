@@ -67,7 +67,6 @@ function NavLink({ item, dark }) {
 export default function Navigation({ content, dark = false }) {
 
     const router = useRouter();
-    console.log(router);
     const [realLinks, setRealLinks] = useState([])
 
     useEffect(() => {
