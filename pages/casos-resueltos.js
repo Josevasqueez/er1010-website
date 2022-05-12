@@ -7,7 +7,6 @@ import Title from '../components/blocks/Title';
 import Section from '../components/blocks/Section';
 
 export default function casesResult({ navbar, footer, content, results }) {
-    console.log(content, results);
     return (
         <Layout seo={content.seo} navigation={navbar} footer={footer}>
             <Section>
@@ -28,9 +27,9 @@ export default function casesResult({ navbar, footer, content, results }) {
                                         <Image alt="" src={getImage(result.attributes.cover.data.attributes.url)} height="50" width="100%" layout="responsive" objectFit='cover' />
                                     }
                                     <div className='bg-gray-100 p-10'>
-                                        <h5 className='mb-6 text-red-400 font-bold text-2xl'>${new Intl.NumberFormat('en-US').format(result.attributes.compensation)}</h5>
+                                        <h5 className='mb-2 text-red-400 font-bold text-2xl'>${new Intl.NumberFormat('en-US').format(result.attributes.compensation)}</h5>
                                         <ReactMarkdown>{result.attributes.description}</ReactMarkdown>
-                                        <h3 className='text-sm text-gray-400 mt-2'>{result.attributes.title}</h3>
+                                        {/* <h3 className='text-sm text-gray-400 mt-2'>{result.attributes.title}</h3> */}
                                     </div>
                                 </div>
                             )

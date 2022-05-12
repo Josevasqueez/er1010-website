@@ -11,7 +11,6 @@ import LandingForm from '../components/LandingForm';
 import CallNowButtom from '../components/CallNowButtom';
 
 export default function Lawyer({ landing }) {
-    console.log(landing);
     const seo = landing.attributes.seo;
 
     return (
