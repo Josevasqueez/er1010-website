@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Partnertitle from './blocks/Partnertitle'
 import Section from './blocks/Section'
 import Subtitle from './blocks/Subtitle';
@@ -95,6 +96,7 @@ export default function Footer({ content }) {
                         </div>
                         <p className='mb-2 text-xs'>{content.slogan}</p>
                         <span className='text-sm'>{content.copyright}</span>
+                        <p className='underline text-xs mt-5'><Link href={"/politicas"}><a>Ver políticas de privacidad</a></Link></p>
                     </div>
                     <div className="col-span-2 space-y-2 rounded border border-gray-600 p-5">
                         <h4>Disclaimer</h4>
