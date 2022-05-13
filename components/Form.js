@@ -42,7 +42,7 @@ export default function Form({ data }) {
                 ))
             }
             <input type="text" name="botfield" id="botfield" placeholder='Don’t fill this out' className='hidden' onChange={handleInputChange} />
-            <input type="submit" value={isSubmit ? "..." : submit} disabled={isSubmit} className={`w-full rounded text-white ${isSubmit ? 'bg-gray-700 cursor-wait' : 'bg-red-500 hover:bg-red-600 cursor-pointer'} transition px-6 py-4 font-semibold text-sm `} />
+            <input type="submit" value={isSubmit ? "..." : submit} disabled={isSubmit} className={`w-full rounded text-white ${isSubmit ? 'bg-gray-700 cursor-wait' : 'bg-redbase hover:bg-redhover cursor-pointer'} transition px-6 py-4 font-semibold text-sm `} />
         </form>
     )
 }
@@ -50,7 +50,7 @@ export default function Form({ data }) {
 function Group({ label, type, id, placeholder = "", required = false, handleInputChange }) {
     return (
         <div className="mb-5 text-gray-800">
-            <label className='text-xs'>{label}{required && <span className='text-red-500 font-bold'>*</span>}</label>
+            <label className='text-xs'>{label}{required && <span className='text-redbase font-bold'>*</span>}</label>
             {
                 type === "longtext"
                     ?

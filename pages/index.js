@@ -61,7 +61,7 @@ export default function Home({ content, areas, navbar, footer, testimonials, loc
                   <h3 className='text-xl font-bold mb-5'>{area.attributes.Title}</h3>
                   <p className='line-clamp-3 mb-5'>{area.attributes.Description}</p>
                   <Link href="/practice-areas">
-                    <a className='font-semibold text-red-500 hover:text-red-600'>{locale.includes("es") ? "Ver más" : "Read More"}</a>
+                    <a className='font-semibold text-redbase hover:text-redhover'>{locale.includes("es") ? "Ver más" : "Read More"}</a>
                   </Link>
                 </div>
               </div>
