@@ -29,13 +29,13 @@ export default function Lawyer({ landing }) {
                             </Link>
                             <Title><span className='font-medium text-white'>{landing.attributes.title}</span></Title>
                             <div className="h-2"></div>
-                            <Partnertitle main={true}>{landing.attributes.subtitle}</Partnertitle>
+                            <Partnertitle main={true}><span className='lg:text-2xl'>{landing.attributes.subtitle}</span></Partnertitle>
                             <ReactMarkdown className='hidden md:block md:space-y-5 my-10'>{landing.attributes.content}</ReactMarkdown>
                             <div className="hidden md:block">
                                 <Image alt="Iconos" src={"/Iconos.png"} height="70" width="500" objectFit='contain' />
                             </div>
                         </div>
-                        <div className='bg-gray-900/75 lg:h-screen p-6 py-12 md:p-10 flex flex-col justify-center items-center'>
+                        <div className='bg-gray-900/75 lg:h-screen p-6 py-10 md:p-10 flex flex-col justify-center items-center'>
                             <LandingForm data={landing.attributes} />
                             <ReactMarkdown className='md:hidden mt-8 mb-10 space-y-5 '>{landing.attributes.content}</ReactMarkdown>
                             <div className="md:hidden MB-16">
