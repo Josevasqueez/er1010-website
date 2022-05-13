@@ -37,8 +37,8 @@ function NavLink({ item, dark }) {
                         <span>{title}</span>
                         <ChevronDownIcon
                             className={classNames(
-                                open ? 'text-red-500' : 'text-gray-400',
-                                `ml-2 h-5 w-5 group-hover:text-red-600`
+                                open ? 'text-redbase' : 'text-gray-400',
+                                `ml-2 h-5 w-5 group-hover:text-redhover`
                             )}
                             aria-hidden="true"
                         />
@@ -96,7 +96,7 @@ export default function Navigation({ content, dark = false }) {
                         </Link>
                     </div>
                     <div className="-mr-2 -my-2 lg:hidden flex items-center space-x-4">
-                        <Popover.Button className={`bg-red-500 rounded-md p-2 inline-flex items-center justify-center text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500`}>
+                        <Popover.Button className={`bg-redbase rounded-md p-2 inline-flex items-center justify-center text-white hover:bg-redhover focus:outline-none focus:ring-2 focus:ring-inset focus:ring-redbase`}>
                             <span className="sr-only">Open menu</span>
                             <MenuIcon className="h-6 w-6" aria-hidden="true" />
                         </Popover.Button>
@@ -127,7 +127,7 @@ export default function Navigation({ content, dark = false }) {
                                 </div>
                             </div>
                             <div className="-mr-2">
-                                <Popover.Button className={`bg-red-500 rounded-md p-2 inline-flex items-center justify-center text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500`}>
+                                <Popover.Button className={`bg-redbase rounded-md p-2 inline-flex items-center justify-center text-white hover:bg-redhover focus:outline-none focus:ring-2 focus:ring-inset focus:ring-redbase`}>
                                     <span className="sr-only">Close menu</span>
                                     <XIcon className="h-6 w-6" aria-hidden="true" />
                                 </Popover.Button>
