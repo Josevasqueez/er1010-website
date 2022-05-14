@@ -13,7 +13,7 @@ export default async function Contact(req, res) {
     const mailData = {
         from: `"Sitio Web de ER1010" <${process.env.NEXT_PUBLIC_EMAIL_USER}>`,
         to: ['avasquez@wizchimp.com', req.body.toemail],
-        subject: `Message From Ezequiel Reyna Website`,
+        subject: `Nuevo mensaje en el formulario de ER1010`,
         html: `<div>
             <p><b>Name: </b> ${req.body.name}</p>
             <p><b>Email: </b> ${req.body.email}</p>
