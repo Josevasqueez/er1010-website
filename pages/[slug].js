@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
 import { fetchAPI, getImage } from '../lib/api'
-import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 import Layout from '../components/Layout';
 import Section from '../components/blocks/Section';
 import Title from '../components/blocks/Title';
