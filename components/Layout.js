@@ -11,14 +11,14 @@ export default function Layout({ children, seo, navigation, footer, dark = false
                 <meta name="description" content={metaDescription} />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-216071602-1"></script>
-                <script dangerouslySetInnerHTML={{
+                {/* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-216071602-1"></script> */}
+                {/* <script dangerouslySetInnerHTML={{
                     __html: `window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
                     gtag('config', 'AW-10843878606');
                     gtag('config', 'UA-216071602-1');`}}>
-                </script>
+                </script> */}
                 <script dangerouslySetInnerHTML={{
                     __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
