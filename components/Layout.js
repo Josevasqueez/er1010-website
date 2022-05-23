@@ -24,7 +24,7 @@ export default function Layout({ children, seo, navigation, footer, dark = false
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                    })(window,document,'script','dataLayer','GTM-PNC8ZJ4');`}}>
+                    })(window,document,'script','dataLayer','GTM-PNFD3JB');`}}>
                 </script>
                 <script dangerouslySetInnerHTML={{
                     __html: `!function(f,b,e,v,n,t,s)
@@ -60,7 +60,7 @@ export default function Layout({ children, seo, navigation, footer, dark = false
                 &&
                 <>
                     <noscript dangerouslySetInnerHTML={{
-                        __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNC8ZJ4"
+                        __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNFD3JB"
                         height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}>
                     </noscript>
                     <script dangerouslySetInnerHTML={{
