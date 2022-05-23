@@ -23,10 +23,10 @@ export default function thankYou({ content, locale }) {
                     <br />
                     <Link href={content.button.url}><a><Button>{content.button.text}</Button></a></Link>
                 </div>
-                <script dangerouslySetInnerHTML={{
+                {/* <script dangerouslySetInnerHTML={{
                     __html: `gtag('event', 'conversion', {'send_to': 'AW-10843878606/zh2NCP_ipLADEM7p4bIo'});`
                     }}>
-                </script>
+                </script> */}
             </Section>
         </Layout>
     )
