@@ -36,13 +36,14 @@ export default function Form({ data }) {
         <form onSubmit={handleSubmit}>
             <h3 className='text-2xl font-semibold text-gray-900'>{title}</h3>
             <p className='text-sm mb-10'>{content}</p>
-            {
+            <iframe src="https://js.callrail.com/forms/FORef96875629c543079f1be29c6ec30147" title='Formulario Callrail' className='h-96 w-full' />
+            {/* {
                 fields?.map((f, index) => (
                     <Group key={index} label={f.label} type={f.type} id={f.id} placeholder={f.placeholder} required={f.required} handleInputChange={handleInputChange} />
                 ))
             }
             <input type="text" name="botfield" id="botfield" placeholder='Don’t fill this out' className='hidden' onChange={handleInputChange} />
-            <input type="submit" value={isSubmit ? "..." : submit} disabled={isSubmit} className={`w-full rounded text-white ${isSubmit ? 'bg-gray-700 cursor-wait' : 'bg-redbase hover:bg-redhover cursor-pointer'} transition px-6 py-4 font-semibold text-sm `} />
+            <input type="submit" value={isSubmit ? "..." : submit} disabled={isSubmit} className={`w-full rounded text-white ${isSubmit ? 'bg-gray-700 cursor-wait' : 'bg-redbase hover:bg-redhover cursor-pointer'} transition px-6 py-4 font-semibold text-sm `} /> */}
         </form>
     )
 }
