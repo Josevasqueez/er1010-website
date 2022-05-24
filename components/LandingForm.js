@@ -40,13 +40,14 @@ export default function LandingForm({ data }) {
             <a href={`tel:${phone}`} target="_blank" rel="noreferrer" className='text-2xl md:text-3xl font-bold text-redbase hover:text-redhover transition'>{phone}</a>
             {/* <ReactMarkdown className='mb-8 mt-5'>{content}</ReactMarkdown> */}
             <p className='mb-8 mt-5'>O llena el formulario y <br /><b>obtén una consulta gratis.</b></p>
-            {
+            <iframe src="https://js.callrail.com/forms/FORef96875629c543079f1be29c6ec30147" title='Formulario Callrail' className='h-96 w-full text-white' />
+            {/* {
                 fields?.map((f, index) => (
                     <Group key={index} label={f.label} type={f.type} id={f.id} placeholder={f.placeholder} required={f.required} handleInputChange={handleInputChange} />
                 ))
             }
             <input type="text" name="botfield" id="botfield" placeholder='Don’t fill this out' className='hidden' onChange={handleInputChange} />
-            <input type="submit" value={isSubmit ? "..." : submit} disabled={isSubmit} className={`w-full rounded text-white ${isSubmit ? 'bg-gray-700 cursor-wait' : 'bg-redbase hover:bg-redhover cursor-pointer'} transition px-6 py-4 font-semibold text-sm `} />
+            <input type="submit" value={isSubmit ? "..." : submit} disabled={isSubmit} className={`w-full rounded text-white ${isSubmit ? 'bg-gray-700 cursor-wait' : 'bg-redbase hover:bg-redhover cursor-pointer'} transition px-6 py-4 font-semibold text-sm `} /> */}
             <p className='text-xs mt-5'>Al enviar tu mensaje estás aceptando nuestras <Link href={"/politicas"}><a className='underline'>políticas de privacidad</a></Link></p>
 
         </form>
