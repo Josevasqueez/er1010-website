@@ -9,8 +9,10 @@ import Title from '../components/blocks/Title';
 import Partnertitle from '../components/blocks/Partnertitle';
 import LandingForm from '../components/LandingForm';
 import CallNowButtom from '../components/CallNowButtom';
+import Subtitle from '../components/blocks/Subtitle';
+import Button from '../components/blocks/Button';
 
-export default function Lawyer({ landing }) {
+export default function Lawyer({ landing, locale }) {
     const seo = landing.attributes.seo;
 
     return (
@@ -44,6 +46,32 @@ export default function Lawyer({ landing }) {
                     </div>
                 </Section>
             </div>
+            {
+                landing.attributes.results?.data.length > 0 &&
+                <Section bg='bg-slate-900 text-white'>
+                    <Subtitle><span className='text-white'>{locale.includes('es') ? "Nuestros resultados hablan por nosotros" : "Our results speak for themselves"}</span></Subtitle>
+                    <div className="my-10 grid lg:grid-cols-3 gap-10">
+                        {
+                            landing.attributes.results?.data.sort((a, b) => b.attributes.compensation - a.attributes.compensation).slice(0, 3).map(result => {
+                                return (
+                                    <div key={result.id} className="rounded">
+                                        <div className=''>
+                                            <h5 className='text-redbase font-bold text-2xl'>${new Intl.NumberFormat('en-US').format(result.attributes.compensation)}</h5>
+                                            <ReactMarkdown className='text-sm'>{result.attributes.description}</ReactMarkdown>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                    <Link href={"/cases-result"}>
+                        <a>
+                            <Button>{locale.includes('es') ? "Ver más" : "View more"}</Button>
+                        </a>
+                    </Link>
+                    <br />
+                </Section>
+            }
             <CallNowButtom phone={landing.attributes.phone} />
         </Layout>
     )
@@ -70,7 +98,7 @@ export async function getStaticProps({ locale, params }) {
         const landing = await fetchAPI("er-1010-landings?populate=*&filters[slug]=" + params.slug + "&locale=" + (locale.includes('es') ? 'es-MX' : 'en'))
         console.log(params, landing[0]);
         return {
-            props: { landing: landing[0] },
+            props: { landing: landing[0], locale },
         }
     } catch (err) {
         console.log(err);

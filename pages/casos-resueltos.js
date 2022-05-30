@@ -55,7 +55,7 @@ export async function getStaticProps({ locale }) {
         encodeValuesOnly: true,
     });
     const { attributes: content } = await fetchAPI("cases-result?" + queryLocale)
-    const results = await fetchAPI("results?populate=*")
+    const results = await fetchAPI("results?"  + queryLocale)
     const { attributes: navbar } = await fetchAPI("navbar-er-1010?" + queryLocale)
     const { attributes: footer } = await fetchAPI("footer-er-1010?" + queryFooter)
     return {
