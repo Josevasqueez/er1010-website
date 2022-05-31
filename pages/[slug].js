@@ -64,7 +64,7 @@ export default function Lawyer({ landing, locale }) {
                             })
                         }
                     </div>
-                    <Link href={"/cases-result"}>
+                    <Link href={"/casos-resueltos"}>
                         <a>
                             <Button>{locale.includes('es') ? "Ver más" : "View more"}</Button>
                         </a>
