@@ -40,7 +40,9 @@ export default function Layout({ children, seo, navigation, footer, dark = false
             {
                 !landing
                 &&
-                <Navigation content={navigation} dark={dark} />
+                <div className="sticky top-0 z-50">
+                    <Navigation content={navigation} dark={dark} />
+                </div>
             }
             <main>
                 {children}
