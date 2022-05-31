@@ -11,23 +11,18 @@ export default function Layout({ children, seo, navigation, footer, dark = false
                 <title>{metaTitle} - ER1010</title>
                 <meta name="description" content={metaDescription} />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta name="google-site-verification" content="sa3zDvEK6zUHNbflM4jKlP_6wrXYe-fvcTDhbEMFbJ0" />
+                <meta name="facebook-domain-verification" content="344802fh7gb8d4dcwq13up0bi5pgt5" />
 
-                {/* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-216071602-1"></script> */}
-                {/* <script dangerouslySetInnerHTML={{
-                    __html: `window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', 'AW-10843878606');
-                    gtag('config', 'UA-216071602-1');`}}>
-                </script> */}
-                <Script id="google-tag-manager" dangerouslySetInnerHTML={{
-                    __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            </Head>
+            <Script id="google-tag-manager" dangerouslySetInnerHTML={{
+                __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                     })(window,document,'script','dataLayer','GTM-PNFD3JB');`}} />
-                <Script id="facebook-pixel" dangerouslySetInnerHTML={{
-                    __html: `!function(f,b,e,v,n,t,s)
+            <Script id="facebook-pixel" dangerouslySetInnerHTML={{
+                __html: `!function(f,b,e,v,n,t,s)
                     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
                     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
                     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
@@ -37,15 +32,11 @@ export default function Layout({ children, seo, navigation, footer, dark = false
                     'https://connect.facebook.net/en_US/fbevents.js');
                     fbq('init', '629334045055055');
                     fbq('track', 'PageView');`}} />
-                <noscript dangerouslySetInnerHTML={{
-                    __html: `<img height="1" width="1" style="display:none"
+            <noscript dangerouslySetInnerHTML={{
+                __html: `<img height="1" width="1" style="display:none"
                     src="https://www.facebook.com/tr?id=629334045055055&ev=PageView&noscript=1"
                     />`}}>
-                </noscript>
-                <meta name="google-site-verification" content="sa3zDvEK6zUHNbflM4jKlP_6wrXYe-fvcTDhbEMFbJ0" />
-                <meta name="facebook-domain-verification" content="344802fh7gb8d4dcwq13up0bi5pgt5" />
-
-            </Head>
+            </noscript>
             {
                 !landing
                 &&
